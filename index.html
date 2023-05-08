@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger:hover .line {
+    background-color: #555;
+  }
+  .hamburger:hover+.nav-links {
+    
+    display: flex;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+  <div class="logo">
+    <h1>Welcome to My Homepage</h1>
+  </div>
+  <nav>
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    <ul class="nav-links">
+      <li><a href="./part1/part1.html">TASK 1</a></li>
+      <li><a href="./part2/part2.html">TASK 2</a></li>
+    </ul>
+    
+  </nav>
+</header>
+
+    <main>
+      <section>
+        <article>
+          <h2>Who am I?</h2>
+          <p>
+            Lorem <span>Elnur Maharramov</span> 
+          </p>
+        </article>
+        <article>
+          <h2>Why did I create this page?</h2>
+          <p>
+            Again :D Lorem <span>To visit tasks by easy way</span> iciendis consectetur! Tempore, enim.
+          </p>
+        </article>
+        <article>
+            <h2>Here I have header, main and footer</h2>
+            <p>
+              Now Lorem <span>Created for more text</span> 
+            </p>
+          </article>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <ul>
+          <li>
+            <a href="#"
+              ><i class="fa-brands fa-facebook fa-beat-fade"></i> Facebook</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-brands fa-twitter fa-beat-fade"></i> Twitter</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-brands fa-instagram fa-beat-fade"></i> Instagram</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <p>&copy; 2023 Code Academy.</p>
+    </footer>
+  </body>
+</html>
