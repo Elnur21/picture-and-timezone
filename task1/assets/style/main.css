@@ -130,7 +130,6 @@ header ul{
     top: 95px;
     right: 170px;
 }
-
 .standard-article:nth-child(4) span:first-child{
     z-index: 10;
     position: relative;
@@ -140,9 +139,6 @@ header ul{
     position:absolute;
     left:55%
 }
-
-
-
 .standard-article:nth-child(4) p:last-child{
     position: relative;
     font-size: 25px;
@@ -150,7 +146,11 @@ header ul{
     text-align: center;
     line-height: 120%;
 }
-.standard-article:nth-child(4) p:last-child::after{
-    content: "";
-    position: absolute;
+.articles button{
+    width: 100%;
+    font-size: 20px;
+    background-color: rgb(251,251,253);
+    border: 0.5px solid rgb(187, 187, 187);
+    padding: 15px 0;
+    margin-top: 3px;
 }
