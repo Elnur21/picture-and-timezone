@@ -1,0 +1,18 @@
+.d-flex{
+    display: flex;
+}
+.standard-article{
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 3);
+    padding: 50px 0;
+}
+.standard-article .category{
+    font-size: .8rem;
+    color: grey;
+}
+.standard-article .price{
+    color: aquamarine;
+}

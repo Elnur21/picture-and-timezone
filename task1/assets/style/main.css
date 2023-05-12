@@ -1,0 +1,20 @@
+/* Style the header */
+header nav{
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh / 7);
+}
+header ul{
+    width: 60%;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+.active,header ul li:hover{
+    color: red;
+    border-bottom:1px solid red
+}
+
+/* Style the main section*/
+.articles{
+    flex-wrap: wrap;
+}
