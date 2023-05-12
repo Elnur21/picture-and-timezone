@@ -1,18 +1,13 @@
 .d-flex{
     display: flex;
 }
-.standard-article{
-    background-color: white;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: calc(100% / 3);
-    padding: 50px 0;
+.capitalize{
+    text-transform: capitalize;
 }
-.standard-article .category{
-    font-size: .8rem;
-    color: grey;
+.border-top-right{
+    border-top: 1px solid rgb(187, 187, 187);
+    border-right: 0.5px solid rgb(187, 187, 187);
 }
-.standard-article .price{
-    color: aquamarine;
+.border-bottom{
+    border-bottom: 0.5px solid rgb(187, 187, 187);
 }
