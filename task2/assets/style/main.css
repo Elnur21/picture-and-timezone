@@ -1,0 +1,44 @@
+@import "root.css";
+header{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: #141517;
+    padding: 0 7%;
+}
+header ul{
+    align-items: center;
+    gap:0 42px;
+}
+header>nav>ul>li{
+    padding: 41px 0;
+}
+header li a, .dropdown{
+    transition: 0.3s;
+}
+.active, header li a:hover{
+    color:var(--red-500)
+}
+.drop{
+    position: relative;
+}
+
+.hot{
+    background-color: var(--red-500);
+    color: white;
+    display: inline-block;
+    padding:10% 15%;
+    border-radius: 25%;
+    position: absolute;
+    top: 15%;
+    right: -30px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    font-size: 10px;
+}
+.hamburger{
+    display: none;
+}
