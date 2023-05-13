@@ -207,9 +207,68 @@ header ul{
 }
 .footer-content-parent{
     background-color: rgb(36,36,36);
-    padding: ;
+    padding: 100px 0;
+    color: white;
 }
 .footer-content{
     width: 80%;
     margin: 0 auto;
+    gap: 0 100px;
+}
+.footer-content h2{
+    width: 600px;
+    font-size: 4rem;
+}
+.footer-nav{
+    width: 70%;
+    justify-content: space-between;
+    margin-top: 50px;
+    line-height: 200%;
+}
+.footer-nav a{
+    text-decoration: underline;
+}
+.footer-nav a:hover{
+    color: aquamarine;
+}
+.footer-active{
+    color: aquamarine;
+}
+.payment{
+    margin-top: 10px;
+    font-size: 3rem;
+    align-items: center;
+    gap: 0 20px;
+    position: relative;
+}
+.payment a{
+    height: 40px;
+    color: rgb(36,36,36);
+    background-color: white;
+    position: relative;
+}
+.payment a::before{
+    content: "";
+    position: absolute;
+    height: 120%;
+    width: 5px;
+    background-color: rgb(36,36,36);
+    left: -2px;
+}
+.payment a::after{
+    content: "";
+    position: absolute;
+    height: 120%;
+    width: 5px;
+    background-color: rgb(36,36,36);
+    right: -2px;
+}
+.payment::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(36,36,36);
+    z-index: 1000;
+    top: -4px;
 }
