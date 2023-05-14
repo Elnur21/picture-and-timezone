@@ -37,3 +37,15 @@
 .margin-top-200{
     margin-top: 200px;
 }
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+li::selection,
+p::selection{
+  background-color: rgb(103, 207, 207);
+  color: white;
+}
+
