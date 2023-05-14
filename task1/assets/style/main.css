@@ -18,6 +18,12 @@ header ul li:hover {
   color: red;
   border-bottom: 1px solid red;
 }
+header li {
+  transition: 0.5s;
+}
+.hamburger{
+  display: none;
+}
 
 /* Style the main section*/
 .articles {
