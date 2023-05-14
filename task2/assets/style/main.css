@@ -3,7 +3,9 @@
 header,
 .banner,
 .arrival,
-.popular-items {
+.popular-items,
+.video-button,
+.watch-details h2 {
   font-family: "Josefin Sans", sans-serif;
 }
 /* Header  */
@@ -170,9 +172,12 @@ header li a:hover {
 .popular-items-header h2 {
   font-size: 48px;
 }
-.popular-items-header p {
+.popular-items-header p,
+.watch-details p  {
   font-family: "Roboto", sans-serif;
   color: rgb(131, 131, 131);
+}
+.popular-items-header p{
   width: 55%;
   margin: 0 auto;
   line-height: 200%;
@@ -189,7 +194,9 @@ header li a:hover {
   overflow: hidden;
 }
 .popular-img i,
-.popular-img a {
+.popular-img a,
+.play-video,
+.video-button {
   position: absolute;
   transition: 0.5s;
 }
@@ -202,7 +209,7 @@ header li a:hover {
 .popular-img img {
   width: 100%;
 }
-.popular-img:hover  i {
+.popular-img:hover i {
   opacity: 1;
 }
 .popular-img a {
@@ -214,9 +221,63 @@ header li a:hover {
   left: 0;
   transform: translateY(100%);
 }
-.popular-img:hover  a {
+.popular-img:hover a {
   transform: translateY(0%);
 }
 .popular-items-body p {
   color: inherit;
+}
+.pupular-button,
+.watch-details a {
+  background-color: var(--red-500);
+}
+.pupular-button::after,
+.watch-details a::after {
+  background-color: rgb(74, 74, 75);
+}
+
+.video {
+  position: relative;
+}
+.video img {
+  width: 100%;
+}
+.video-button {
+  background-color: var(--red-500);
+  color: white;
+  padding: 3.5%;
+  left: 0;
+  bottom: 4px;
+  width: calc(100% / 3);
+  justify-content: space-between;
+}
+.play-video {
+  font-size: 2em;
+  bottom: 0;
+  left: 0;
+  color: white;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.play-video i {
+  padding: 100%;
+  border-radius: 50%;
+  border: 1px solid white;
+  transition: 0.5s;
+}
+.video:hover .play-video i {
+  padding: 120%;
+}
+.play-video i:hover {
+  color: var(--red-500);
+  background-color: white;
+}
+.watch-details h2 {
+  font-size: 56px;
+}
+.watch-details p {
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
 }
