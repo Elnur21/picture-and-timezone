@@ -1,7 +1,8 @@
 @import "root.css";
 
 header,
-.banner {
+.banner,
+.arrival {
   font-family: "Josefin Sans", sans-serif;
 }
 /* Header  */
@@ -104,4 +105,37 @@ header li a:hover {
   to {
     transform: scale(1.1);
   }
+}
+
+/* main  */
+
+.arrival h2 {
+  font-size: 48px;
+  margin-bottom: 60px;
+}
+.products {
+  gap: 0 30px;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.product-body{
+    padding: 30px 0;
+}
+.product-body h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.product-body p{
+    font-size: 18px;
+    color: var(--red-500);
+}
+.product-img{
+    overflow: hidden;
+}
+.products img{
+    transition: 1s;
+}
+.products img:hover{
+    transform: scale(1.1);
 }
