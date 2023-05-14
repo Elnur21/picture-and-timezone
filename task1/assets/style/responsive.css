@@ -1,3 +1,33 @@
+@media only screen and (max-width: 1500px) {
+  /* Style the main section*/
+  .standard-article:nth-child(3) p::after {
+    left: 90%;
+  }
+  .standard-article:nth-child(4) p:first-child {
+    font-size: 200px;
+  }
+  .standard-article:nth-child(4) span:first-child {
+    left: 4%;
+  }
+  .standard-article:nth-child(4) span:last-child {
+    left: 51%;
+  }
+
+  /* Style the footer*/
+  .subscribe{
+    font-size: 20px;
+    gap: 0 70px;
+  }
+  form {
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-between;
+  }
+  form button {
+    padding: 2% 0;
+    width: 100% !important;
+  }
+}
 @media only screen and (max-width: 1200px) {
   /* Style the header */
   header ul {
