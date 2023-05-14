@@ -5,7 +5,7 @@ header,
 .arrival,
 .popular-items,
 .video-button,
-.watch-details h2 {
+.watch-details {
   font-family: "Josefin Sans", sans-serif;
 }
 /* Header  */
@@ -274,10 +274,22 @@ header li a:hover {
   color: var(--red-500);
   background-color: white;
 }
+.watch-details article{
+  gap: 0 150px;
+}
 .watch-details h2 {
   font-size: 56px;
 }
 .watch-details p {
   font-size: 17px;
-  font-family: "Roboto", sans-serif;
+}
+.watch-body{
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px 0px;
+}
+.watch-details article:nth-child(2){
+  margin-top: 130px;
+  flex-direction: row-reverse;
 }

@@ -76,6 +76,12 @@
   .banner img {
     width: 25%;
   }
+  .watch-details h2 {
+    font-size: 46px;
+  }
+  .watch-details img {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 1005px) {
   .products article,
@@ -172,6 +178,14 @@
   .banner h1 {
     font-size: 35px;
   }
+  .watch-details article{
+    flex-direction: column !important;
+    gap: 50px;
+  }
+  .watch-details img {
+    width: 100%;
+  }
+  
 }
 @media only screen and (max-width: 576px) {
   .header-icons {
