@@ -34,6 +34,43 @@
     justify-content: space-between;
     font-size: 1.5rem;
   }
+
+  /* Style the main section*/
+  .standard-article:nth-child(3) p::after {
+    top: 0;
+    left: 120%;
+  }
+  .standard-article:nth-child(4) p:first-child {
+    font-size: 170px;
+  }
+  .standard-article:nth-child(4) span:first-child {
+    left: 10%;
+  }
+  .standard-article:nth-child(4) span:last-child {
+    left: 51%;
+  }
+  .standard-article:nth-child(4) h3 {
+    font-size: 3rem;
+    top: -20px;
+  }
+  .standard-article:nth-child(4) h3::after {
+    top: 65px;
+    right: 140px;
+  }
+  .standard-article:nth-child(4) p:last-child {
+    font-size: 20px;
+    width: 80%;
+  }
+   /* Style the footer*/
+   .subscribe{
+    font-size: 20px;
+    gap: 0 30px;
+  }
+  .footer-nav{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 30px;
+  }
 }
 @media only screen and (max-width: 992px) {
   /* Style the header */
