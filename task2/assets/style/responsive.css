@@ -31,10 +31,10 @@
 }
 
 @media only screen and (max-width: 1700px) {
-    .container {
-      width: 90%;
-    }
+  .container {
+    width: 90%;
   }
+}
 
 @media only screen and (max-width: 1600px) {
   header {
@@ -53,6 +53,12 @@
   .container {
     width: 90%;
   }
+  .outer-galery {
+    flex-wrap: wrap;
+  }
+  .inner-galery:first-child {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 1200px) {
   header ul {
@@ -68,6 +74,13 @@
     width: 25%;
   }
 }
+@media only screen and (max-width: 1005px) {
+  .products article,
+  .product-img img {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   body {
     background-color: aqua;
@@ -135,10 +148,14 @@
   .banner {
     padding: 0;
   }
-  .products article, .product-img img{
-    width: 100%;
-  }
 
+  .outer-galery {
+    flex-direction: column;
+    gap: 20px 0px;
+  }
+  .inner-galery {
+    gap: 20px 0px;
+  }
 }
 @media only screen and (max-width: 770px) {
   .banner h1 {

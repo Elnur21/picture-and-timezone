@@ -119,23 +119,46 @@ header li a:hover {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.product-body{
-    padding: 30px 0;
+.product-body {
+  padding: 30px 0;
 }
-.product-body h3{
-    font-size: 24px;
-    margin-bottom: 20px;
+.product-body h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
-.product-body p{
-    font-size: 18px;
-    color: var(--red-500);
+.product-body p {
+  font-size: 18px;
+  color: var(--red-500);
 }
-.product-img{
+.product-img {
+  overflow: hidden;
+}
+.products img {
+  transition: 1s;
+}
+.products img:hover {
+  transform: scale(1.1);
+}
+
+
+.img-galery,.outer-galery {
+    width: 100%;
+}
+.inner-galery img{
+    width: 100%;
+}
+.outer-galery {
+    gap: 0 20px;
+  justify-content: space-between;
+}
+.inner-galery{
+    flex-direction: column;
+    justify-content: space-between;
     overflow: hidden;
 }
-.products img{
-    transition: 1s;
-}
-.products img:hover{
+.inner-galery img{
     transform: scale(1.1);
+}
+.inner-galery img:hover{
+    transform: scale(1.0);
 }
