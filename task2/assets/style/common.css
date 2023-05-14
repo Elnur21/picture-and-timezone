@@ -1,0 +1,51 @@
+.d-flex {
+  display: flex;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.container {
+  width: 61%;
+  margin: 0 auto;
+}
+.template-button {
+  display: inline-block;
+  background-color: rgb(74, 74, 75);
+  color: white;
+  padding: 16px 29px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: relative;
+  z-index: 0;
+}
+.template-button::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--red-500);
+  z-index: -1;
+  transition: 0.5s;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+.template-button:hover::after {
+  width: 100%;
+}
+.margin-top-200{
+    margin-top: 200px;
+}
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+li::selection,
+p::selection{
+  background-color: rgb(103, 207, 207);
+  color: white;
+}
+
