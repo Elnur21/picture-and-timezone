@@ -1,44 +1,107 @@
 @import "root.css";
-header{
-    font-family: 'Josefin Sans', sans-serif;
+
+header,
+.banner {
+  font-family: "Josefin Sans", sans-serif;
+}
+/* Header  */
+header {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: #141517;
+  padding: 0 7%;
+  position: fixed;
+  background-color: white;
+  z-index: 100;
+}
+header ul {
+  align-items: center;
+  gap: 0 42px;
+}
+header > nav > ul > li {
+  padding: 41px 0;
+}
+header li a,
+.dropdown {
+  transition: 0.3s;
+}
+.active,
+header li a:hover {
+  color: var(--red-500);
+}
+.drop {
+  position: relative;
 }
 
-header{
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    color: #141517;
-    padding: 0 7%;
+.hot {
+  background-color: var(--red-500);
+  color: white;
+  display: inline-block;
+  padding: 10% 15%;
+  border-radius: 25%;
+  position: absolute;
+  top: 15%;
+  right: -30px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  font-size: 10px;
 }
-header ul{
-    align-items: center;
-    gap:0 42px;
-}
-header>nav>ul>li{
-    padding: 41px 0;
-}
-header li a, .dropdown{
-    transition: 0.3s;
-}
-.active, header li a:hover{
-    color:var(--red-500)
-}
-.drop{
-    position: relative;
+.hamburger {
+  display: none;
 }
 
-.hot{
-    background-color: var(--red-500);
-    color: white;
-    display: inline-block;
-    padding:10% 15%;
-    border-radius: 25%;
-    position: absolute;
-    top: 15%;
-    right: -30px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    font-size: 10px;
+/* Banner */
+.banner {
+  padding-top: 100px;
+  width: 100%;
+  overflow: hidden;
+
+  height: max-content;
+  background-color: rgb(240, 240, 242);
 }
-.hamburger{
-    display: none;
+.banner .container {
+  align-items: center;
+}
+.banner h1 {
+  color: rgb(11, 28, 57);
+  font-size: 96px;
+  line-height: 120%;
+}
+.banner p {
+  font-family: "Roboto", sans-serif;
+  line-height: 150%;
+  margin: 8% 0;
+  width: 85%;
+}
+.banner a,
+.banner p,
+.banner h1 {
+  animation: BannerContent 1s linear 0.5s 1 alternate backwards;
+}
+.banner-content {
+  overflow: hidden;
+}
+.banner img {
+  position: relative;
+  left: 9.3%;
+  animation: Purge 1s linear infinite alternate;
+}
+@keyframes BannerContent {
+  from {
+    transform: translateX(-110%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes Purge {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
 }

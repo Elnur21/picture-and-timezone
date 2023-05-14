@@ -34,10 +34,32 @@
   header {
     padding: 0 10px;
   }
+  .container {
+    width: 75%;
+  }
 }
+@media only screen and (max-width: 1500px) {
+  .container {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 1300px) {
+    .container {
+      width: 90%;
+    }
+  }
 @media only screen and (max-width: 1200px) {
   header ul {
     gap: 0 30px;
+  }
+  .container {
+    width: 75%;
+  }
+  .banner h1{
+    font-size: 60px;
+  }
+  .banner img{
+    width: 25%;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -76,11 +98,11 @@
     font-size: 2em;
     order: 3;
   }
-  .header-icons{
+  .header-icons {
     position: absolute;
     right: 10%;
   }
-  .hamburger:hover + .menu{
+  .hamburger:hover + .menu {
     display: block;
   }
   .drop {
@@ -104,4 +126,20 @@
   .drop:hover .dropdown {
     display: flex;
   }
+  .banner{
+    padding: 0;
+  }
 }
+@media only screen and (max-width: 770px) {
+    .banner h1{
+      font-size: 35px;
+    }
+  }
+@media only screen and (max-width: 576px) {
+    .banner{
+        padding: 80px 0;
+      }
+    .banner img{
+      display: none;
+    }
+  }
