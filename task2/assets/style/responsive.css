@@ -56,6 +56,9 @@
   .outer-galery {
     flex-wrap: wrap;
   }
+  .inner-galery{
+    width: 49%;
+  }
   .inner-galery:first-child {
     width: 100%;
   }
@@ -79,12 +82,12 @@
   .product-img img {
     width: 100%;
   }
+  .inner-galery{
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 992px) {
-  body {
-    background-color: aqua;
-  }
   header {
     padding: 20px 20px;
     position: relative;
@@ -155,6 +158,14 @@
   }
   .inner-galery {
     gap: 20px 0px;
+  }
+}
+@media only screen and (max-width: 965px) {
+  .popular-items-body article{
+    width: 100%;
+  }
+  .popular-img {
+    border-bottom-width: 8px;
   }
 }
 @media only screen and (max-width: 770px) {
