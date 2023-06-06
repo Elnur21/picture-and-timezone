@@ -1,140 +1,381 @@
-/* Style the header */
-*{
-    font-family: 'Poppins', sans-serif;
+@import "root.css";
+
+header,
+.banner,
+.arrival,
+.popular-items,
+.video-button,
+.watch-details {
+  font-family: "Josefin Sans", sans-serif;
 }
+header li a,
+.dropdown,
+.popular-img i,
+.popular-img a,
+.inner-galery img,
+.play-video,
+.play-video i,
+.video img,
+.video-button,
+.footer-start li,
+.footer-icons a {
+  transition: 0.5s;
+}
+/* Header  */
 header {
-	background-color: #FFFFFF;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-	padding: 10px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: #141517;
+  padding: 0 7%;
+  position: fixed;
+  background-color: white;
+  z-index: 100;
 }
-nav{
-    width: 40%;
+header ul {
+  align-items: center;
+  gap: 0 42px;
 }
-nav ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-    display: flex;
-    justify-content: space-between;
+header > nav > ul > li {
+  padding: 41px 0;
 }
-
-nav a {
-	color: #444444;
-	font-size: 18px;
-	text-decoration: none;
-	transition: color 0.3s ease;
+.active,
+header li a:hover {
+  color: var(--red-500);
+}
+.drop {
+  position: relative;
 }
 
-nav a:hover {
-	color: #E74C3C;
+.hot {
+  background-color: var(--red-500);
+  color: white;
+  display: inline-block;
+  padding: 10% 15%;
+  border-radius: 25%;
+  position: absolute;
+  top: 15%;
+  right: -30px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  font-size: 10px;
+}
+.hamburger {
+  display: none;
 }
 
-/* Style the main section */
-main {
-	margin-top: 100px;
-	padding: 50px;
+/* Banner */
+.banner {
+  padding-top: 100px;
+  width: 100%;
+  overflow: hidden;
+
+  height: max-content;
+  background-color: rgb(240, 240, 242);
 }
-h1{
-    text-align: center;
-    font-size: 3rem;
-    color: red;
+.banner .container {
+  align-items: center;
 }
-h1,h2,h4{
-    margin-bottom: 30px;
+.banner h1 {
+  color: rgb(11, 28, 57);
+  font-size: 96px;
+  line-height: 120%;
 }
-.articles {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+.banner p {
+  font-family: "Roboto", sans-serif;
+  line-height: 150%;
+  margin: 8% 0;
+  width: 85%;
+}
+.banner a,
+.banner p,
+.banner h1 {
+  animation: BannerContent 1s linear 0.5s 1 alternate backwards;
+}
+.banner-content {
+  overflow: hidden;
+}
+.banner img {
+  position: relative;
+  left: 9.3%;
+  animation: Purge 1s linear infinite alternate;
+}
+@keyframes BannerContent {
+  from {
+    transform: translateX(-110%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
 }
 
-article {
-	background-color: #FFFFFF;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-	margin-bottom: 30px;
-	padding: 20px;
-	width: calc(33.33% - 20px);
-	transition: box-shadow 0.3s ease;
+@keyframes Purge {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
 }
 
-article:hover {
-	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+/* main  */
+
+.arrival h2 {
+  font-size: 48px;
+  margin-bottom: 60px;
+}
+.products {
+  gap: 0 30px;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.product-body {
+  padding: 30px 0;
+}
+.product-body h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.product-body p {
+  font-size: 18px;
+  color: var(--red-500);
+}
+.product-img {
+  overflow: hidden;
+}
+.products img {
+  transition: 1s;
+}
+.products img:hover {
+  transform: scale(1.1);
 }
 
-article h2 {
-	color: #E74C3C;
-	font-size: 24px;
-	margin-top: 0;
+.img-galery,
+.outer-galery {
+  width: 100%;
+}
+.inner-galery img {
+  width: 100%;
+}
+.shadow {
+  background-color: black;
+  overflow: hidden;
+}
+.outer-galery {
+  gap: 0 20px;
+  justify-content: space-between;
+}
+.inner-galery {
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.inner-galery img {
+  transform: scale(1.1);
+}
+.inner-galery img:hover {
+  transform: scale(1);
+  opacity: 0.5;
 }
 
-article p {
-	color: #444444;
-	font-size: 16px;
-	margin-bottom: 20px;
+.popular-items {
+  text-align: center;
+}
+.popular-items-header h2 {
+  font-size: 48px;
+}
+.popular-items-header p,
+.watch-details p {
+  font-family: "Roboto", sans-serif;
+  color: rgb(131, 131, 131);
+}
+.popular-items-header p {
+  width: 55%;
+  margin: 0 auto;
+  line-height: 200%;
+  margin-top: 10px;
+}
+.popular-items-body {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.popular-img {
+  position: relative;
+  border-bottom: 3px solid var(--red-500);
+  overflow: hidden;
+}
+.popular-img i,
+.popular-img a,
+.play-video,
+.video-button {
+  position: absolute;
+}
+.popular-img i {
+  font-size: 2rem;
+  right: 5%;
+  top: 5%;
+  opacity: 0;
+}
+.popular-img img {
+  width: 100%;
+}
+.popular-img:hover i {
+  opacity: 1;
+}
+.popular-img a {
+  background-color: var(--red-500);
+  width: 100%;
+  padding: 7% 0;
+  color: white;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+}
+.popular-img:hover a {
+  transform: translateY(0%);
+}
+.popular-items-body p {
+  color: inherit;
+}
+.pupular-button,
+.watch-details a {
+  background-color: var(--red-500);
+}
+.pupular-button::after,
+.watch-details a::after {
+  background-color: rgb(74, 74, 75);
 }
 
-article a {
-	background-color: #E74C3C;
-	border-radius: 4px;
-	color: #FFFFFF;
-	display: inline-block;
-	padding: 10px 20px;
-	text-decoration: none;
-	transition: background-color 0.3s ease;
+.video {
+  position: relative;
 }
-
-article a:hover {
-	background-color: #C0392B;
+.video img {
+  width: 100%;
 }
-
-/* Style the footer */
+.video-button {
+  background-color: var(--red-500);
+  color: white;
+  padding: 3.5%;
+  left: 0;
+  bottom: 0;
+  width: calc(100% / 3);
+  justify-content: space-between;
+}
+.play-video {
+  font-size: 2em;
+  bottom: 0;
+  left: 0;
+  color: white;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.play-video i {
+  padding: 100%;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.video:hover .play-video i {
+  padding: 120%;
+}
+.play-video i:hover {
+  color: var(--red-500);
+  background-color: white;
+}
+.video:hover img {
+  opacity: 0.5;
+}
+.watch-details article {
+  gap: 0 150px;
+}
+.watch-details h2 {
+  font-size: 56px;
+}
+.watch-details p {
+  font-size: 17px;
+}
+.watch-body {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px 0px;
+}
+.watch-details article:nth-child(2) {
+  margin-top: 130px;
+  flex-direction: row-reverse;
+}
+.secure,
 footer {
-	background-color: #444444;
-	color: #FFFFFF;
-	padding: 50px;
-    width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+.secure p::selection,
+.secure h6::selection {
+  color: white;
+  background-color: rgb(185, 110, 99);
+}
+.secure article {
+  width: 25%;
+}
+.secure .container {
+  padding: 2% 0;
+  background-color: var(--red-500);
+  color: white;
+  justify-content: space-around;
+  line-height: 220%;
+}
+.secure i {
+  font-size: 40px;
+  transform: rotateY(180deg);
+}
+.secure h6 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.secure p {
+  color: #d3d1d1;
 }
 
-footer .container {
-	display: flex;
-	justify-content: space-around;
-    width: 100%;
-}
+/* footer  */
 
-h4 {
-	color: #E74C3C;
-	font-size: 20px;
-	margin-top: 0;
+footer {
+  color: #777;
 }
-
-p {
-	font-size: 16px;
-	line-height: 1.5;
-	margin-bottom: 20px;
+.footer-logo {
+  width: 25%;
 }
-
-.social-media {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	display: flex;
+.footer-logo img {
+  margin-bottom: 30px;
 }
-
-.social-media li {
-	margin-right: 10px;
+.footer-start {
+  justify-content: space-between;
+  line-height: 200%;
 }
-
-.social-media a {
-	color: #FFFFFF;
-	font-size: 24px;
-	text-decoration: none;
-	transition: color 0.3s ease;
+.footer-start h5 {
+  font-size: 20px;
+  color: #141517;
+  margin-bottom: 20px;
 }
-
-.social-media a:hover {
-	color: #E74C3C;
+.footer-start li:hover {
+  transform: translateX(2%);
+  color: var(--red-500);
+}
+footer span {
+  color: var(--red-500);
+}
+.footer-end {
+  justify-content: space-between;
+}
+.footer-icons {
+  gap: 0 20px;
+}
+.footer-icons a:hover {
+  color: var(--red-500);
+  transform: rotateY(180deg);
+}
+.footer-end {
+  padding: 120px 0;
 }
